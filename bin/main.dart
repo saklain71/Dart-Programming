@@ -1,7 +1,7 @@
 // findout total sum of this given array?? done
 // media
 
-// find out the largest number
+// <<<find out the largest number>>>
 void main() {
   int sum = 0;
 
@@ -25,26 +25,26 @@ int sumArray(array, sum, big) {
   return big;
 }
 
-// find out sammelst number done
-// void main() {
-//   int sum = 0;
+////  <<<find out sammelst number done>>>
+void main() {
+  int sum = 0;
 
-//   List<int> array = [23, 45, 555, 556, 56, 65, 18];
-//   int min = array[0];
-//   sumArray(array, sum, min);
-// }
+  List<int> array = [23, 45, 555, 556, 56, 65, 18];
+  int min = array[0];
+  sumArray2(array, sum, min);
+}
 
-// int sumArray(array, sum, min) {
-//   for (int i = 0; i < array.length; i++) {
-//     // sum = sum + array[i];
-//     if (array[i] < min) {
-//       min = array[i];
-//     }
-//     print("value: ${array[i]}");
-//     print('min value : ${min}');
-//   }
-//   //print('total of array is ${sum}');
-//   //return sum;
-//   print(" Smallest number ${min}");
-//   return min;
-// }
+int sumArray2(array, sum, min) {
+  for (int i = 0; i < array.length; i++) {
+    // sum = sum + array[i];
+    if (array[i] < min) {
+      min = array[i];
+    }
+    print("value: ${array[i]}");
+    print('min value : ${min}');
+  }
+  //print('total of array is ${sum}');
+  //return sum;
+  print(" Smallest number ${min}");
+  return min;
+}
