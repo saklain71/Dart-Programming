@@ -4,7 +4,7 @@ void main() {
 
   List<int> array = [23, 45, 555, 556, 56, 65];
 
-  int resultArray = sumArray(array, sum);
+  sumArray(array, sum);
 }
 
 int sumArray(array, sum) {
