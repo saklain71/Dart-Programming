@@ -2,6 +2,8 @@
  1. fixed length List
  2. Growabale List 
 */
+import 'dart:async';
+
 void main() {
   List<int> ages = [10, 20, 89, 20];
   print(ages);
@@ -25,7 +27,8 @@ void main() {
   print(newList.length);
 
   // Immutable Liost
-  const List<int> number = [3, 5, 7, 8, 9, 99];
+  const List<int> constNumber = [3, 5, 7, 8, 9, 99];
+  List<int> number = [3, 5, 7, 8, 9, 99];
 
   //number[3] = 111; not possible to modify;
   print(number);
@@ -34,4 +37,8 @@ void main() {
   print('Is food Empty ' + foods.isEmpty.toString());
   print('Is food Empty ' + foods.isNotEmpty.toString());
   print("Done");
+
+  // Map
+  var newNumber = number.map((n) => n * 2);
+  print(newNumber);
 }
