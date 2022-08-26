@@ -28,10 +28,13 @@ void main() {
 
   // Immutable Liost
   const List<int> constNumber = [3, 5, 7, 8, 9, 99];
+
   List<int> number = [3, 5, 7, 8, 9, 99];
 
   //number[3] = 111; not possible to modify;
   print(number);
+  var newNumber = number.map((n) => n * 2);
+  print(newNumber);
 
   var foods = ['Guava', 'pineApple', 'Strawberry', 'SugerCane'];
   print('Is food Empty ' + foods.isEmpty.toString());
@@ -39,6 +42,5 @@ void main() {
   print("Done");
 
   // Map
-  var newNumber = number.map((n) => n * 2);
-  print(newNumber);
+  ;
 }

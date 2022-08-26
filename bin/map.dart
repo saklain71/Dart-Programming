@@ -39,8 +39,7 @@ void main() {
     //print(${book.key} + 'and' + ${book.value});
     print('Key is ${book.key}, value ${book.value}');
   }
-
-  print(map);
+  for (MapEntry book in book.entries) print(map);
   map.remove('third');
   print(map);
 }
